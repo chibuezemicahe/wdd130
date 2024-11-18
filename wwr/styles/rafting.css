@@ -1,0 +1,80 @@
+:root{
+    --primary-color:#232220;
+    --secondary-color:#ffffff;
+    --accent1-color:#F26B38;
+    --accent2-color:#007BFF;
+
+    --heading-font: 'Roboto Condensed', sans-serif;
+    --text-font:'Open Sans', sans-serif;
+}
+
+*{
+    font-family: var(--text-font);
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+  
+.logo {
+    max-width: 200px; /* Adjust the maximum width as needed */
+}
+  
+.nav-link {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--secondary-color);
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+}
+   
+.hero-h1{
+    position: absolute;
+    top: 20%; /* Adjust to position the text vertically over the image */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Here I Centers text horizontally and vertically because i use absolute positioning */
+    font-size: 2rem;
+    color: var(--accent1-color);
+    background-color: rgba(0, 0, 0, 0.5); /* Here I Add a semi-transparent background for readability */
+    padding: 10px 20px;
+    border-radius: 5px; /* I add a radius to the border of h1 just to add some additional beauty */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Here I try to Control the width of the article block */
+    background-color: rgba(255, 255, 255, 0.8); /* I make it Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+.hero-img-side {
+    float: right; /* Make the image float to the right of the text */
+    margin: 0 0 10px 10px; /* Add some space between the image and the text */
+    max-width: 200px; /* Optional: limit the width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+p {
+    position: relative;
+    margin: 0; /* Optional: control paragraph spacing */
+}
