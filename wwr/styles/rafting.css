@@ -1,6 +1,20 @@
+@font-face {
+    font-family : 'Roboto Condensed';
+    font-style : normal;
+    font-weight : 100;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyo_BJ.ttf) format('truetype');
+}
+@font-face {
+    font-family : 'Open Sans';
+    font-style : normal;
+    font-weight : 500;
+    font-stretch : normal;
+    font-display : swap;
+    src : url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root{
     --primary-color:#232220;
     --secondary-color:#ffffff;
@@ -10,6 +24,8 @@
     --heading-font: 'Roboto Condensed', sans-serif;
     --text-font:'Open Sans', sans-serif;
 }
+
+
 
 *{
     font-family: var(--text-font);
@@ -60,6 +76,20 @@ nav{
 	padding: 30px;
 	text-decoration: none;
 }
+
+.nav-link {
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Base font size (adjust for preference) */
+    font-weight: bold; /* Bold styling */
+    color: #f0f0f0; /* Light font color for contrast */
+    transition: color 0.3s ease; /* Smooth hover transition */
+    
+  }
+  
+  .nav-link:hover {
+    color:tomato; /* Highlight color on hover */
+    text-shadow: 1px 1px 3px rgba(255, 87, 34, 0.7); /* Subtle glow effect */
+  }
 
 .hero{
     position: relative;
@@ -156,4 +186,22 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1.5rem; /* Here I add Space between the columns */
     text-align: justify;
+}
+
+.footer-grid{
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 2px solid #232220;
+}
+
+.sociallinks a img{
+    max-width: 64px;
+}
+
+.footer-grid p{
+    text-align: center;
 }
