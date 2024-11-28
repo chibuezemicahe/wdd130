@@ -31,7 +31,7 @@ header {
 }
 
 header, main, footer {
-    max-width: 1300px;   
+    max-width: 1200px;   
     margin: 0 auto;
  }
   
@@ -146,7 +146,7 @@ p {
 }
 
 .adven-text-grid img{
-    max-width: 170px;
+    max-width: 120px;
     height: auto;
     border-radius: 20px;
 }
