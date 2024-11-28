@@ -1,28 +1,10 @@
-@font-face {
-    font-family : 'Roboto Condensed';
-    font-style : normal;
-    font-weight : 100;
-    font-display : swap;
-    src : url(https://fonts.gstatic.com/s/robotocondensed/v27/ieVo2ZhZI2eCN5jzbjEETS9weq8-_d6T_POl0fRJeyWyo_BJ.ttf) format('truetype');
-}
-@font-face {
-    font-family : 'Open Sans';
-    font-style : normal;
-    font-weight : 500;
-    font-stretch : normal;
-    font-display : swap;
-    src : url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
-    }
-
-
 :root{
     --primary-color:#232220;
     --secondary-color:#ffffff;
     --accent1-color:#F26B38;
     --accent2-color:#007BFF;
-
     --heading-font: 'Roboto Condensed', sans-serif;
-    --text-font:'Open Sans', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
 }
 
 
@@ -45,9 +27,13 @@ header {
 	grid-template-columns: 120px 1fr 2fr;
 	align-items: center;
 	border-bottom: 1px solid #ccc;
-	max-width: 1300px;
  
 }
+
+header, main, footer {
+    max-width: 1300px;   
+    margin: 0 auto;
+ }
   
 .logo {
    max-width: 150px;
@@ -57,44 +43,33 @@ header {
 
 nav{
     text-align:right;
+    display: flex;
 }
 
-.navigation {
-	display: flex;
-	list-style: none;
-}
 
-.navigation li {
-	flex: 1 1 100%;
-}
-.nav-link {
-    display: block;
-    text-decoration: none;
-    margin-left: 100px; 
-    color: var(--secondary-color);
-   
-	padding: 30px;
-	text-decoration: none;
-}
 
-.nav-link {
-    text-decoration: none; /* Remove underline */
-    font-size: 1rem; /* Base font size (adjust for preference) */
-    font-weight: bold; /* Bold styling */
-    color: #f0f0f0; /* Light font color for contrast */
-    transition: color 0.3s ease; /* Smooth hover transition */
+ 
+
+
+nav a {
     
-  }
+    display: block;
+    margin-left: 100px;
+    padding: 30px; 
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; 
+    font-weight: bold; /* Bold styling */
+    color: #f0f0f0; /* Light font color for contrast */    
+}
   
-  .nav-link:hover {
+nav a:hover {
     color:tomato; /* Highlight color on hover */
-    text-shadow: 1px 1px 3px rgba(255, 87, 34, 0.7); /* Subtle glow effect */
-  }
+    text-shadow: 1px 1px 3px rgba(255, 87, 34, 0.7); /* I add a litle bit of a Subtle glow effect */
+}
 
 .hero{
     position: relative;
     text-align: center;
-    max-width: 1300px;
     margin: auto;
     height: auto;
 }
@@ -103,9 +78,11 @@ nav{
     position: absolute;
     top: 20%; 
     left: 50%;
-    transform: translate(-50%, -50%); 
-    font-size: 1.9rem;
-    color: var(--accent1-color);
+    transform: translate(-50%, -50%);
+    font-family: var(--heading-font); 
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
     background-color: rgba(0, 0, 0, 0.5); /* Here I Add a semi-transparent background for readability */
     padding: 10px 20px;
     border-radius: 5px; /* I add a radius to the border of h1 just to add some additional beauty */
@@ -190,7 +167,6 @@ p {
 
 .footer-grid{
     display: grid;
-    max-width: 1000px;
     grid-template-columns: 4fr 2fr;
     align-items: center;
     margin: 10px auto;
