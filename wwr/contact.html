@@ -52,15 +52,15 @@
         <h2>Meet Our Team</h2>
         <div class="profiles">
             <figure>
-                <img src="images/employee1.jpg" alt="Employee 1">
+                <img src="/images/employee1.jpg" alt="Employee 1">
                 <figcaption>John Doe - Head Guide</figcaption>
             </figure>
             <figure>
-                <img src="images/employee2.jpg" alt="Employee 2">
+                <img src="/images/employee2.jpg" alt="Employee 2">
                 <figcaption>Jane Smith - Adventure Planner</figcaption>
             </figure>
             <figure>
-                <img src="images/employee3.jpg" alt="Employee 3">
+                <img src="/images/employee3.jpg" alt="Employee 3">
                 <figcaption>Sam Brown - Customer Support</figcaption>
             </figure>
         </div>
@@ -70,30 +70,28 @@
     <section class="contact-form">
         <h2>Get in Touch</h2>
         <form action="submit-form.php" method="POST">
-            <!-- Name -->
+      
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <!-- Email -->
+      
             <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <!-- Purpose -->
             <p>Purpose of Message:</p>
             <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
             <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
             <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
 
-            <!-- Message -->
+           
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-           
-            <!-- <label>
+            <br>      
                 <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
-            </label> -->
+            </label> 
 
-            <!-- Submit Button -->
+            
             <button type="submit">Send Message</button>
         </form>
     </section>
