@@ -181,3 +181,39 @@ p {
 .footer-grid p{
     text-align: center;
 }
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 1200px;
+    padding: 20px 30px; 
+    margin: 25px auto;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9); /* Softer gradient */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* I add a box shadow for more beautification */
+}
+
+.company-info h1 {
+    font-size: 2rem; /* Larger heading size */
+    font-family: 'Roboto', sans-serif;
+    color: #333; 
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.company-info p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    text-align: center; 
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+.company-info iframe {
+    border-radius: 8px; /* Here i create a round corner on the iframe */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* here i try to create shadow on the i frame */
+    margin-top: 15px;
+}
+
+
