@@ -345,3 +345,6 @@ p {
     background: var(--accent1-color);
 }
 
+footer #mockup {
+    color: black; /* Change the color to white for better contrast */
+  }
