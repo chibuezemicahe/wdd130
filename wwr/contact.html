@@ -10,12 +10,7 @@
         <meta name="author" content="Micah Erumaka">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=
-                    Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display
-                    =swap" rel="stylesheet">
-                    <link rel="preconnect" href="https://fonts.googleapis.com">
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/rafting.css">
         
     </head>
@@ -73,19 +68,19 @@
         <label for="name">Your Name:</label>
         <input type="text" id="name-input" name="name" required>
 
-        <label for="email">Your Email:</label>
+        <label for="email-input">Your Email:</label>
         <input type="email" id="email-input" name="email" required>
 
         <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="general" required id="general-purpose"> General Inquiry</label>
-        <label><input type="radio" name="purpose" value="reservation" required id="reservation-purpose"> Reservation Question</label>
-        <label><input type="radio" name="purpose" value="suggestion" required id="suggestion-purpose"> Website Suggestion</label>
+        <label for="general-purpose"><input type="radio" name="purpose" value="general"  id="general-purpose"> General Inquiry</label>
+        <label for="reservation-purpose"><input type="radio" name="purpose" value="reservation"  id="reservation-purpose"> Reservation Question</label>
+        <label for="suggestion-purpose"><input type="radio" name="purpose" value="suggestion"  id="suggestion-purpose"> Website Suggestion</label>
 
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <br>
-        <label>
+        <label for="newsletter-checkbox">
             <input type="checkbox" name="newsletter" id="newsletter-checkbox"> Please subscribe me to the monthly newsletter
         </label>
 
@@ -94,7 +89,7 @@
         </section>
 </main>
         <footer class="footer-grid">
-            <p>(c) 2024, Expedition Rafting Club Built By Micah Erumaka  </p>
+            <p>&copy; 2024, Expedition Rafting Club Built By Micah Erumaka </p>
                 <nav class="sociallinks">
                   <a href="https://facebook.com">
                     <img src="images/facebook.svg" alt="Facebook">
@@ -105,8 +100,8 @@
                   <a href="https://instagram.com">
                     <img src="images/instagram.svg" alt="Instagram">
                   </a>
-                  <a href="https://app.moqups.com/aG2UUlj2Obqv7V9LkTEAtEaJzmceq8QM/view/page/ad12de680?ui=0>"
-                    > Mockup </a>
+                  <a href="https://app.moqups.com/aG2UUlj2Obqv7V9LkTEAtEaJzmceq8QM/view/page/ad12de680?ui=0%3E" 
+                  >Mockup</a>
                 </nav>
         </footer>
     </body>
