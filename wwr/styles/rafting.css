@@ -345,7 +345,3 @@ p {
     background: var(--accent1-color);
 }
 
-#map{
-    width:600; 
-    height:450;
-}
