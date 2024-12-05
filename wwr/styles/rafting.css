@@ -344,3 +344,8 @@ p {
 .contact-form button:active {
     background: var(--accent1-color);
 }
+
+#map{
+    width:600; 
+    height:450;
+}
