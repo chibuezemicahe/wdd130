@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Expedition Rafting Club</title>
+        <meta name="description" content="Expedition Rafting Club homepage featuring thrilling adventures and white water rafting experiences.">
+        <meta name="author" content="Micah Erumaka">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/rafting-club.png" alt="Expedition Rafting Club Logo" class="logo">
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="trips.html" class="nav-link">Trips</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+          
+                <!-- Hero Section -->
+                <section class="hero">
+                    <img src="../wwr/images/hero-rafting.jpg" alt="Thrilling White Water Rafting Adventure" class="hero-img" id="hero-img-index">
+                    <div class="hero-content">
+                        <h1 id="index">Experience the Thrill of White Water Rafting</h1>
+                        <p class="hero-subheading">Discover unforgettable adventures on the rapids with our expert-guided tours!</p>
+                        <a href="trips.html" class="cta-button">Book Your Adventure</a>
+                    <div>
+                </section>
+         
+            <!-- Newsletter Sign-up -->
+            <section class="newsletter">
+                <h2>Join Our Newsletter</h2>
+                <p>Get exclusive updates and special offers directly to your inbox.</p>
+                <form action="subscribe.php" method="POST">
+                    <label for="newsletter-name">Your Name:</label>
+                    <input type="text" id="newsletter-name" name="name" required>
+                    <label for="newsletter-email">Your Email:</label>
+                    <input type="email" id="newsletter-email" name="email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+
+            <!-- Grid Layout for Site Information -->
+            <h1 id="grid-header">What We Are All About</h1>
+            <section class="info-grid">
+              
+                <article class="grid-item">
+                    <img src="/wwr/images/river-rafting-adve3.jpg" alt="Rafting Experience">
+                    <h3>Unmatched Adventure</h3>
+                    <p>Explore thrilling rapids guided by our expert team, ensuring safety and excitement for all experience levels.</p>
+                </article>
+                <article class="grid-item">
+                    <img src="/wwr/images/rafting-adven1.jpeg" alt="Team Building">
+                    <h3>Team Building</h3>
+                    <p>Perfect for corporate retreats or family outings, our activities foster teamwork and create lasting memories.</p>
+                </article>
+                <article class="grid-item">
+                    <img src="/wwr/images/river-rafting-adve4.jpg" alt="Team Building">
+                    <h3>Our Mission</h3>
+                    <p>We strive to make every adventure unforgettable, connecting people to the great outdoors and each other.</p>
+                </article>
+            </section>
+        </main>
+        <footer class="footer-grid">
+            <p>&copy; 2024, Expedition Rafting Club Built by Micah Erumaka</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+                <a id="mockup" href="https://app.moqups.com/aG2UUlj2Obqv7V9LkTEAtEaJzmceq8QM/view/page/ad12de680?ui=0%3E">Mockup</a>
+            </nav>
+        </footer>
+    </body>
+</html>
