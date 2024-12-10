@@ -547,3 +547,177 @@ padding-bottom: 15px;
 margin-top: 45px;
 border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
+
+/* Css Design For The Trips Page */
+
+
+/* General Styles for Main */
+main {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.trips-hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.trips-hero-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(40%);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.trips-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.trips-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+.trips-hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+}
+
+.cta-button-trips {
+    padding: 0.75rem 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-trips:hover {
+    background-color: #232220;
+}
+
+/* Trips Descriptions Section */
+.trips-descriptions {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.trips-descriptions h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent1-color);
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.trip-item {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trip-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1rem 0 0.5rem;
+}
+
+.trip-item p {
+    font-size: 1rem;
+    padding: 0 1rem 1.5rem;
+    color: #555;
+}
+
+/* Trips Table Section */
+.trips-table-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.trips-table-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent1-color);
+    margin-bottom: 1rem;
+}
+
+.trips-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.trips-table th, .trips-table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.trips-table th {
+    background-color: var(--accent1-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.trips-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.trips-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.trips-table tr:hover {
+    background-color: #e9f5ff;
+}
+
+.trips-table td {
+    color: #333;
+    font-size: 1rem;
+}
+
